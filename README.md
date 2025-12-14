@@ -1,28 +1,27 @@
-📊 Credit Risk Prediction using Machine Learning
+💳 Credit Risk Prediction using Machine Learning
 
-This project focuses on building an end-to-end Credit Risk Prediction system to analyze borrower data and evaluate loan approval risk using multiple machine learning models.
+An end-to-end machine learning project that predicts loan approval risk by comparing multiple regression and classification models on a real-world credit dataset.
 
-🎯 Project Objective
+📌 Overview
 
-To compare the performance of different regression and classification algorithms and identify the most reliable model for credit risk assessment based on real-world data.
+This project focuses on building a complete ML pipeline — from data preprocessing and exploratory analysis to model training, evaluation, and comparison — to identify the most reliable model for credit risk assessment.
 
-🔍 Key Features
+⚙️ Features
 
 Data cleaning and preprocessing
 
-Handling missing values and categorical encoding
+Categorical encoding and feature scaling
 
-Feature scaling for improved model performance
+Exploratory Data Analysis (EDA)
 
-Exploratory Data Analysis (EDA) using correlation heatmaps
+Multiple ML model implementations
 
-Model comparison using multiple evaluation metrics
+Model performance comparison using metrics and plots
 
-Model serialization for reuse and deployment
+Model saving using Pickle
 
-🤖 Models Implemented
-
-Regression Models
+🤖 Models Used
+Regression
 
 Simple Linear Regression
 
@@ -30,7 +29,7 @@ Multiple Linear Regression
 
 Polynomial Regression
 
-Classification Models
+Classification
 
 Logistic Regression
 
@@ -40,7 +39,7 @@ Random Forest
 
 K-Nearest Neighbors (KNN)
 
-📈 Evaluation Metrics
+📊 Evaluation Metrics
 
 Accuracy
 
@@ -50,15 +49,7 @@ Recall
 
 F1 Score
 
-Model performance is also visualized using accuracy comparison charts and Precision–Recall–F1 plots for better interpretability.
-
-🧠 Key Insights
-
-Random Forest achieved the best overall performance due to ensemble learning
-
-Feature scaling significantly improved Logistic Regression and KNN results
-
-Relying only on accuracy is insufficient; F1 score provides a more balanced evaluation
+Model performance is visualized using accuracy comparison bar charts and Precision–Recall–F1 plots.
 
 🛠️ Tech Stack
 
@@ -70,21 +61,30 @@ Scikit-learn
 
 Matplotlib, Seaborn
 
+🧠 Key Insights
 
-📌 Learning Outcomes
+Random Forest delivered the best overall performance
 
-Understanding complete ML pipelines from data preprocessing to evaluation
+Feature scaling improved Logistic Regression and KNN
 
-Hands-on experience with multiple ML algorithms
+Evaluating multiple metrics provides better model reliability than accuracy alone
 
-Practical insights into model selection and comparison
+🚀 How to Run
+pip install -r requirements.txt
+python main.py
 
-🚀 Future Improvements
+📁 Project Outputs
+
+model.pkl – trained Random Forest model
+
+scaler.pkl – fitted StandardScaler
+
+🔮 Future Work
 
 Hyperparameter tuning
 
 ROC-AUC analysis
 
-Model deployment using Flask or FastAPI
+Model deployment using Flask / FastAPI
 
-⭐ If you find this project useful, feel free to star the repository!
+⭐ If you find this project useful, consider starring the repository!
